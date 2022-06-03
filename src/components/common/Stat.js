@@ -38,7 +38,7 @@ const Stat = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
         axios
-            .post("http://localhost:4000/user/vendororder", newUser)
+            .post("https://sapota.herokuapp.com/user/vendororder", newUser)
             .then((response) => {
                 setUsers(response.data);
                 console.log(response.data);

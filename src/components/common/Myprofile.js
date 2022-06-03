@@ -66,7 +66,7 @@ const Myprofile = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
         axios
-            .post("http://localhost:4000/user/profile", newUser)
+            .post("https://sapota.herokuapp.com/user/profile", newUser)
             .then((response) => {
                 setUsers(response.data);
                 setmanagerName(response.data.managername);
@@ -105,7 +105,7 @@ const Myprofile = () => {
     const onSubmit =(event) =>{
         // useEffect(() => {
         //     axios
-        //         .post("http://localhost:4000/user/edit", newUser)
+        //         .post("https://sapota.herokuapp.com/user/edit", newUser)
         //         .then((response) => {
         //             setUsers(response.data);
         //             // if(response.data===1)
@@ -120,7 +120,7 @@ const Myprofile = () => {
         //         });
         // }, []);
         axios
-        .post("http://localhost:4000/user/edit", newusers)
+        .post("https://sapota.herokuapp.com/user/edit", newusers)
         .then((response) => {
             setUsers(response.data)
           

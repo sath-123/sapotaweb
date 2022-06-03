@@ -52,7 +52,7 @@ const Regv = (props) => {
 
 
     axios
-      .post("http://localhost:4000/register/vendors", newUser)
+      .post("https://sapota.herokuapp.com/register/vendors", newUser)
       .then((response) => {
         alert("Created\t" + response.data.name);
         console.log(response.data);

@@ -64,7 +64,7 @@ const Buyerp = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
         axios
-            .post("http://localhost:4000/user/bprofile", newUser)
+            .post("https://sapota.herokuapp.com/user/bprofile", newUser)
             .then((response) => {
                 setUsers(response.data);
                 setName(response.data.name);
@@ -103,7 +103,7 @@ const Buyerp = () => {
     const onSubmit = (event) => {
         // useEffect(() => {
         //     axios
-        //         .post("http://localhost:4000/user/edit", newUser)
+        //         .post("https://sapota.herokuapp.com/user/edit", newUser)
         //         .then((response) => {
         //             setUsers(response.data);
         //             // if(response.data===1)
@@ -118,7 +118,7 @@ const Buyerp = () => {
         //         });
         // }, []);
         axios
-            .post("http://localhost:4000/user/bedit", newusers)
+            .post("https://sapota.herokuapp.com/user/bedit", newusers)
             .then((response) => {
                 setUsers(response.data)
 

@@ -43,7 +43,7 @@ const Myorders = () => {
         console.log(newUser.email);
 
         axios
-            .post("http://localhost:4000/user/myorder", newUser)
+            .post("https://sapota.herokuapp.com/user/myorder", newUser)
             .then((response) => {
                 setUsers(response.data);
                 // console.log(response.data)
@@ -66,7 +66,7 @@ const Myorders = () => {
         };
         newuser.status = "completed";
         axios
-            .post("http://localhost:4000/user/changestatus", newuser)
+            .post("https://sapota.herokuapp.com/user/changestatus", newuser)
             .then((response) => {
                 // setUsers(response.data);
                 //setSortedUsers(response.data);

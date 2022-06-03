@@ -67,7 +67,7 @@ const Walletadd = (props) => {
         //     setDum(0);
 
         axios
-            .post("http://localhost:4000/user/walletadd", newUser)
+            .post("https://sapota.herokuapp.com/user/walletadd", newUser)
             .then((res) => {
                 //alert("Created\t" + response.data.name);
                 //console.log(response.data);

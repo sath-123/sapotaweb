@@ -54,7 +54,7 @@ const Buyer = () => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:4000/user/buyerfood")
+            .get("https://sapota.herokuapp.com/user/buyerfood")
             .then((response) => {
                 setUsers(response.data);
                 //setSortedUsers(response.data);
@@ -65,7 +65,7 @@ const Buyer = () => {
             });
 
         axios
-            .post("http://localhost:4000/user/getwallet", newUser)
+            .post("https://sapota.herokuapp.com/user/getwallet", newUser)
             .then((response) => {
                 // console.log(response.data.wallet);
                 setWallet(response.data.wallet);
@@ -88,7 +88,7 @@ const Buyer = () => {
         console.log("in new");
         console.log(newBuyer.wallet);
         axios
-            .post("http://localhost:4000/user/savewallet", newBuyer)
+            .post("https://sapota.herokuapp.com/user/savewallet", newBuyer)
             .then((response) => {
                 console.log(response.data.wallet);
                 // setWallet(response.data.wallet);
@@ -120,7 +120,7 @@ const Buyer = () => {
         console.log("kkk");
         //    alert({foodame});
         axios
-            .post("http://localhost:4000/user/orders", newOrder)
+            .post("https://sapota.herokuapp.com/user/orders", newOrder)
             .then((response) => {
                 // alert("in fy");sponse
                 console.log("ebbbb");
@@ -144,7 +144,7 @@ const Buyer = () => {
                     console.log("in new");
                     console.log(newBuyer.wallet);
                     axios
-                        .post("http://localhost:4000/user/savewallet", newBuyer)
+                        .post("https://sapota.herokuapp.com/user/savewallet", newBuyer)
                         .then((response) => {
                             console.log(response.data.wallet);
                             // setWallet(response.data.wallet);
@@ -180,7 +180,7 @@ const Buyer = () => {
         console.log("kkk");
         //    alert({foodame});
         axios
-            .post("http://localhost:4000/user/fav", newFav)
+            .post("https://sapota.herokuapp.com/user/fav", newFav)
             .then((response) => {
                 // alert("in fy");sponse
                 console.log("ebbbb");

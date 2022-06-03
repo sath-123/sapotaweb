@@ -67,7 +67,7 @@ const Vendor = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
         axios
-            .post("http://localhost:4000/user/getfood", newUser)
+            .post("https://sapota.herokuapp.com/user/getfood", newUser)
             .then((response) => {
                 setUsers(response.data);
                 //setSortedUsers(response.data);
@@ -84,7 +84,7 @@ const Vendor = () => {
         //alert("entered")
         //alert("{email}")
         axios
-            .post("http://localhost:4000/user/deletefood", newuser)
+            .post("https://sapota.herokuapp.com/user/deletefood", newuser)
             .then((response) => {
                 if (response.data === 4) {
                     alert("deleting")
@@ -131,7 +131,7 @@ const Vendor = () => {
         //alert("{email}")
         console.log(newuser.id)
         axios
-            .post("http://localhost:4000/user/editss", newuser)
+            .post("https://sapota.herokuapp.com/user/editss", newuser)
             .then((response) => {
                 if (response.data === 0) {
                     alert("edited")

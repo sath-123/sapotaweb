@@ -45,7 +45,7 @@ const Vendororder = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
         axios
-            .post("http://localhost:4000/user/vendororder", newUser)
+            .post("https://sapota.herokuapp.com//user/vendororder", newUser)
             .then((response) => {
                 setUsers(response.data);
                 //setSortedUsers(response.data);
@@ -75,7 +75,7 @@ const Vendororder = () => {
                 // console.log(newuser.status);
                 newuser.status = "Accepted"
                 axios
-                    .post("http://localhost:4000/user/changestatus", newuser)
+                    .post("https://sapota.herokuapp.com//user/changestatus", newuser)
                     .then((response) => {
                         // setUsers(response.data);
                         //setSortedUsers(response.data);
@@ -100,7 +100,7 @@ const Vendororder = () => {
         else if (user.status === "Accepted") {
             newuser.status = "cooking"
             axios
-                .post("http://localhost:4000/user/changestatus", newuser)
+                .post("https://sapota.herokuapp.com//user/changestatus", newuser)
                 .then((response) => {
                     // setUsers(response.data);
                     //setSortedUsers(response.data);
@@ -118,7 +118,7 @@ const Vendororder = () => {
         else if (user.status === "cooking") {
             newuser.status = "Readyforpickup"
             axios
-                .post("http://localhost:4000/user/changestatus", newuser)
+                .post("https://sapota.herokuapp.com//user/changestatus", newuser)
                 .then((response) => {
                     // setUsers(response.data);
                     //setSortedUsers(response.data);
@@ -159,7 +159,7 @@ const Vendororder = () => {
 
         console.log(newuser.status);
         axios
-            .post("http://localhost:4000/user/changestatus", newuser)
+            .post("https://sapota.herokuapp.com//user/changestatus", newuser)
             .then((response) => {
                 // setUsers(response.data);
                 //setSortedUsers(response.data);
@@ -186,7 +186,7 @@ const Vendororder = () => {
         //     setDum(0);
 
         axios
-            .post("http://localhost:4000/user/walletadd", newUser)
+            .post("https://sapota.herokuapp.com//user/walletadd", newUser)
             .then((res) => {
                 //alert("Created\t" + response.data.name);
                 //console.log(response.data);

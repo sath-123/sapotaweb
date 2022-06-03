@@ -69,8 +69,8 @@ const Login = (props) => {
 
 
 
-    // let one = "http://localhost:4000/user/login/buyer"
-    // let two = "http://localhost:4000/user/login/vendor"
+    // let one = "https://sapota.herokuapp.com/user/login/buyer"
+    // let two = "https://sapota.herokuapp.com/user/login/vendor"
 
 
     // const requestOne = axios.get(one);
@@ -88,8 +88,8 @@ const Login = (props) => {
     //   // react on errors.
     // })
     // axios.all([ssss
-    //   axios.post("http://localhost:4000/user/login/buyer", newUser),
-    //  // axios.post("http://localhost:4000/user/login/vendor", newUser)
+    //   axios.post("https://sapota.herokuapp.com/user/login/buyer", newUser),
+    //  // axios.post("https://sapota.herokuapp.com/user/login/vendor", newUser)
     // ])
     // .then((response) => {
     //       alert("Created\t");
@@ -115,7 +115,7 @@ const Login = (props) => {
     //setDum(5);
     // let s = 0;
     // axios
-    //   .post("http://localhost:4000/user/login/buyer", newUser)
+    //   .post("https://sapota.herokuapp.com/user/login/buyer", newUser)
     //   .then((response) => {
     //     //alert("Created\t" + response.data.name);
     //     //console.log(response.data);
@@ -155,7 +155,7 @@ const Login = (props) => {
     // if (s !== 1) {
 
     axios
-      .post("http://localhost:4000/user/login/vendor", newUser)
+      .post("https://sapota.herokuapp.com/user/login/vendor", newUser)
       .then((res) => {
         //alert("Created\t" + response.data.name);
         //console.log(response.data);

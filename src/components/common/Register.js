@@ -140,7 +140,7 @@ const Register = () => {
 
       };
       axios
-        .post("http://localhost:4000/register/buyers", newUser)
+        .post("https://sapota.herokuapp.com/register/buyers", newUser)
         .then((response) => {
           if (response.data === 0) {
             alert("already there")
@@ -191,7 +191,7 @@ const Register = () => {
       };
 
       axios
-        .post("http://localhost:4000/register/vendors", newVendor)
+        .post("https://sapota.herokuapp.com/register/vendors", newVendor)
         .then((response) => {
           if (response.data === 1) {
             alert("email alraedy existed")

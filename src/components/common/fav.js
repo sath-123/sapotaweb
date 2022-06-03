@@ -38,7 +38,7 @@ const Fav = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
         axios
-            .post("http://localhost:4000/user/findfav", newUser)
+            .post("https://sapota.herokuapp.com/user/findfav", newUser)
             .then((response) => {
                 setUsers(response.data);
                 console.log(response.data);

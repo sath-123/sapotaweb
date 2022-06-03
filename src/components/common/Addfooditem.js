@@ -118,7 +118,7 @@ const Addfooditem = () => {
 
 
         axios
-            .post("http://localhost:4000/user/vendoradd", newFood)
+            .post("https://sapota.herokuapp.com/user/vendoradd", newFood)
             .then(response => {
                 if (response.data === 0) {
                     alert("enter all fields");
